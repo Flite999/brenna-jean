@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Brenna Jean's Homepage`,
+    title: `Brenna Jean's`,
     description: `Personal Coaching & Petsitting services by Brenna`,
     author: `Flite Ventures LLC`,
     siteUrl: `https://brennajean.com`,
