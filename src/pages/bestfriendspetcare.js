@@ -61,9 +61,10 @@ const puppyImage =
 const petboarding =
     <div style={{ borderRadius: '6px', boxShadow: '0 10px 16px 0 rgb(0 0 0 / 24%)', padding: '25px' }}>
         <h2>Pet Boarding (in my home)</h2>
-        <p style={{ fontStyle: 'italic' }}>All dogs must be vaccinated to be boarded</p>
+        <b>To be boarded, your pet must be good with other pets as I have two dogs and two cats in the home. There is a $25 dollar deposit/pet cleaning fee to hold a spot</b>
+        <li>All dogs must be vaccinated to be boarded</li>
         <li>Dogs not potty trained are $25 extra per night</li>
-        <li>$40 per night for dogs (includes minimum 1 hour walk)</li>
+        <li>$45 per night for dogs (includes minimum 1 hour walk)</li>
         <li>$20 per night for cats (they will have a separate room away from other animals)</li>
     </div>
 
@@ -71,7 +72,8 @@ const petsitting =
     <div style={{ borderRadius: '6px', boxShadow: '0 10px 16px 0 rgb(0 0 0 / 24%)', padding: '25px' }}>
         <h2>Pet Sitting</h2>
         <li>In your home (within 10 mile distance, every extra 5 miles is $5)</li>
-        <li>$15 per half hour
+        <li>Please be advised I charge per half hour</li>
+        <li>$20 per half hour
         </li>
     </div>
 
@@ -96,13 +98,14 @@ const inquiry =
         <li>What is the animals food routine?</li>
         <li>What does the animal like best? (I.e. fetch or walks)</li>
         <li>Do you have an alarm system? (Please be advised I will not enter homes unless I have a key and code)</li>
+        <li>Where does your pet normally sleep?</li>
     </div>
 
 const dogwalking =
     <div style={{ borderRadius: '6px', boxShadow: '0 10px 16px 0 rgb(0 0 0 / 24%)', padding: '25px' }}>
         <h2>Dog Walking</h2>
         <li>Within 10 mile distance, every extra 5 miles is $5</li>
-        <li>$15 per dog per half hour (please be advised, I charge a half hour minimum)
+        <li>$20 per dog per half hour (please be advised, I charge a half hour minimum)
         </li>
         <li>2nd dog is $10 per half hour </li>
     </div>
@@ -113,7 +116,7 @@ const PetSittingPage = () => (
     <Layout>
         <Seo title="Petsitting" />
         <h1>Best Friends Pet Care</h1>
-
+        <p><i>Free consultations in your home or mine</i></p>
         <Default>
             <div style={{ display: "grid", gridTemplateColumns: "2fr 1.5fr", gridGap: 20, marginBottom: "2rem" }}>
                 {petboarding}
@@ -153,14 +156,20 @@ const PetSittingPage = () => (
             </div>
         </Mobile>
         <Default>
-            <div style={{ display: "grid", gridTemplateColumns: "2fr 1.5fr", gridGap: 20, marginBottom: "2rem" }}>
+            {/* <div style={{ display: "grid", gridTemplateColumns: "2fr 1.5fr", gridGap: 20, marginBottom: "2rem" }}>
                 {tips}
                 {dogsdcImage}
+            </div> */}
+            <div style={{ marginBottom: "2rem" }}>
+                {tips}
             </div>
         </Default>
         <Mobile>
-            <div style={{ display: "grid", gridGap: 20, marginBottom: '2rem' }}>
+            {/* <div style={{ display: "grid", gridGap: 20, marginBottom: '2rem' }}>
                 {dogsdcImage}
+                {tips}
+            </div> */}
+            <div style={{ marginBottom: "2rem" }}>
                 {tips}
             </div>
         </Mobile>
